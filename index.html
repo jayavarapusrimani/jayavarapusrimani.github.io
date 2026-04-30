@@ -94,6 +94,25 @@ img {
 img:hover {
     transform: scale(1.02);
 }
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .section {
+        padding: 50px 15px;
+    }
+}
+.btn {
+    width: auto;
+}
+
+@media (max-width: 576px) {
+    .btn {
+        width: 100%;
+    }
+}
 </style>
 
 </head>
@@ -132,15 +151,15 @@ img:hover {
 <div class="container text-center">
 <h2>About Me</h2>
 
-<p class="w-75 mx-auto">
+<p class="mx-auto" style="max-width:700px;">
 Started as a PHP backend developer and transitioned into Azure Data Engineering to focus on scalable data pipelines and analytics systems.
 </p>
 
-<p class="w-75 mx-auto">
+<p class="mx-auto" style="max-width:700px;">
 Experienced in building end-to-end ETL pipelines using Azure Data Factory, Databricks, and PySpark, following Bronze, Silver, Gold architecture.
 </p>
 
-<p class="w-75 mx-auto">
+<p class="mx-auto" style="max-width:700px;">
 Skilled in transforming raw data into reliable, analytics-ready datasets and designing pipelines that support reporting and business insights.
 </p>
 
@@ -155,49 +174,49 @@ Skilled in transforming raw data into reliable, analytics-ready datasets and des
 <div class="row text-center g-4">
 
 <!-- Data Engineering -->
-<div class="col-md-3">
+<div class="col-6 col-md-3">
 <i class="fas fa-database icon"></i>
 <p><b>Data Engineering</b><br>ETL Pipelines, Data Modeling</p>
 </div>
 
 <!-- Programming -->
-<div class="col-md-3">
+<div class="col-6 col-md-3">
 <i class="fab fa-python icon"></i>
 <p><b>Programming</b><br>Python, PySpark, SQL</p>
 </div>
 
 <!-- Cloud -->
-<div class="col-md-3">
+<div class="col-6 col-md-3">
 <i class="fas fa-cloud icon"></i>
 <p><b>Cloud</b><br>Azure, ADLS Gen2, ADF</p>
 </div>
 
 <!-- Big Data -->
-<div class="col-md-3">
+<div class="col-6 col-md-3">
 <i class="fas fa-server icon"></i>
 <p><b>Big Data</b><br>Databricks, Delta Lake</p>
 </div>
 
 <!-- Databases -->
-<div class="col-md-3">
+<div class="col-6 col-md-3">
 <i class="fas fa-database icon"></i>
 <p><b>Databases</b><br>MySQL, Azure SQL</p>
 </div>
 
 <!-- Visualization -->
-<div class="col-md-3">
+<div class="col-6 col-md-3">
 <i class="fas fa-chart-bar icon"></i>
 <p><b>Visualization</b><br>Power BI</p>
 </div>
 
 <!-- Tools -->
-<div class="col-md-3">
+<div class="col-6 col-md-3">
 <i class="fas fa-tools icon"></i>
 <p><b>Tools</b><br>Git, GitHub</p>
 </div>
 
 <!-- Concepts -->
-<div class="col-md-3">
+<div class="col-6 col-md-3">
 <i class="fas fa-cogs icon"></i>
 <p><b>Concepts</b><br>SCD Type 1 & 2, Data Warehousing</p>
 </div>
@@ -214,7 +233,7 @@ Skilled in transforming raw data into reliable, analytics-ready datasets and des
 <div class="row g-4">
 
 <!-- Project 1 -->
-<div class="col-md-4">
+<div class="col-12 col-md-6 col-lg-4">
 <div class="card p-4 h-100">
 <h5 class="text-info">Customer Account Data Pipeline</h5>
 
@@ -247,7 +266,7 @@ Details
 </div>
 
 <!-- Project 2 -->
-<div class="col-md-4">
+<div class="col-12 col-md-6 col-lg-4">
 <div class="card p-4 h-100">
 <h5 class="text-info">Transaction & Loan Pipeline</h5>
 
@@ -277,7 +296,7 @@ Details
 </div>
 </div>
 <!-- Project 3 (MAIN PROJECT) -->
-<div class="col-md-4">
+<div class="col-12 col-md-6 col-lg-4">
 <div class="card p-4 h-100 border-primary">
 
 <h5 class="text-info">NYC Taxi Data Pipeline 🚀</h5>
@@ -320,9 +339,9 @@ Details
 
 <!-- IMAGE -->
 <div class="d-flex justify-content-center">
-    <img src="images/architecture.png" 
-         class="img-fluid rounded shadow"
-         style="max-width:800px;">
+    <img src="images/architecture.png"
+     class="img-fluid rounded shadow"
+     style="max-width:800px; width:100%;">
 </div>
 
 <!-- DESCRIPTION -->
@@ -333,7 +352,7 @@ processed using Databricks with PySpark, and served for analytics using Power BI
 </p>
 
 <!-- 🔥 ADD YOUR UL HERE -->
-<ul class="text-start w-75 mx-auto mt-3" style="color:#cbd5f5;">
+<ul class="text-start mx-auto" style="max-width:700px; color:#cbd5f5;">
 <li>Data ingestion from multiple sources using Azure Data Factory</li>
 <li>Raw data stored in Bronze layer (ADLS Gen2)</li>
 <li>Data transformation using Databricks (PySpark)</li>

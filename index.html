@@ -87,6 +87,13 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
+img {
+    transition: 0.3s;
+}
+
+img:hover {
+    transform: scale(1.02);
+}
 </style>
 
 </head>
@@ -305,15 +312,34 @@ Details
 </div>
 </div>
 </section>
+
 <section class="section text-center">
 <div class="container">
-<h2>Architecture</h2>
 
-<img src="images/architecture.png" class="img-fluid rounded">
+<h2 class="mb-4">Architecture</h2>
 
-<p class="mt-3 text-muted">
-Azure Data Engineering pipeline (ADF + ADLS + Databricks + Delta Lake)
+<!-- IMAGE -->
+<div class="d-flex justify-content-center">
+    <img src="images/architecture.png" 
+         class="img-fluid rounded shadow"
+         style="max-width:800px;">
+</div>
+
+<!-- DESCRIPTION -->
+<p class="mt-4" style="color:#cbd5f5;">
+This architecture represents an end-to-end Azure Data Engineering pipeline. 
+Data is ingested using Azure Data Factory, stored in ADLS Gen2 using Bronze, Silver, Gold layers, 
+processed using Databricks with PySpark, and served for analytics using Power BI and Azure SQL.
 </p>
+
+<!-- 🔥 ADD YOUR UL HERE -->
+<ul class="text-start w-75 mx-auto mt-3" style="color:#cbd5f5;">
+<li>Data ingestion from multiple sources using Azure Data Factory</li>
+<li>Raw data stored in Bronze layer (ADLS Gen2)</li>
+<li>Data transformation using Databricks (PySpark)</li>
+<li>Cleaned data stored in Silver and aggregated in Gold layer</li>
+<li>Final data used for reporting and analytics</li>
+</ul>
 
 </div>
 </section>
